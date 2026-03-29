@@ -1,0 +1,17 @@
+<%-include("partials/header.ejs");%>
+    <main>
+        <form action="/shared" method="post" class="cpf">
+            <h1>Name of User</h1>
+            <div id="name"><input type="text" name="name"></div>
+             
+            <h1>Topic</h1>
+
+             <div id="topic"><input type="text" name="topic"></div>
+            <h1>Description</h1>
+
+            <textarea  name="description"></textarea>
+            <button id="submit" type="submit">Share</button>
+        </form>
+    </main>
+
+    <%-include("partials/footer.ejs");%>

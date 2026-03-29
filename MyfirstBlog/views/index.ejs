@@ -1,0 +1,30 @@
+<%-include("partials/header.ejs");%>
+    <main>
+
+        <%if(locals.topics&&locals.descriptions&&locals.names){ 
+            for(var i=0;i<names.length;i++) {%>
+            <div class="blog">
+                <ul>
+                    <li>
+                        <h1>
+                            <%=topics[i]%>
+                        </h1>
+                    </li>
+                    <li>
+                        <p>
+                            <%=names[i]%>
+                        </p>
+                    </li>
+                </ul>
+                <p>
+                    <%=descriptions[i]%>
+                </p>
+
+
+            </div>
+            <% } }else{ %>
+                <h1>no data</h1>
+                <%}%>
+    </main>
+
+    <%-include("partials/footer.ejs");%>
